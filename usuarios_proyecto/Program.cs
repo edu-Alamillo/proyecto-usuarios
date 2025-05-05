@@ -3,7 +3,7 @@ using usuario_proyecto.modelo;
 using usuario_proyecto.servicio;
 using usuarios_proyecto.reportes;
 
-namespace MiAplicacion
+namespace usuarios_proyecto
 {
     class Program
     {
