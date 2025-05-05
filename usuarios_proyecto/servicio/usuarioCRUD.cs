@@ -40,9 +40,9 @@ public class UsuarioCRUD
                     int filas = cmd.ExecuteNonQuery();
                     Console.WriteLine($"Usuario creado exitosamente ({filas} fila/s afectada/s).");
                 }
-                catch (Exception ex)
+                catch (Exception e)
                 {
-                    Console.WriteLine("Error al insertar usuario: " + ex.Message);
+                    Console.WriteLine("Error al insertar usuario: " + e.Message);
                 }
             }
         }
@@ -73,9 +73,9 @@ public class UsuarioCRUD
                         }
                     }
                 }
-                catch (Exception ex)
+                catch (Exception e)
                 {
-                    Console.WriteLine("❌ Error al leer usuarios: " + ex.Message);
+                    Console.WriteLine("Error al leer usuarios: " + e.Message);
                 }
             }
         }
@@ -115,13 +115,13 @@ public class UsuarioCRUD
                 {
                     int filas = cmd.ExecuteNonQuery();
                     if (filas > 0)
-                        Console.WriteLine("✅ Usuario actualizado.");
+                        Console.WriteLine("Usuario actualizado.");
                     else
-                        Console.WriteLine("❌ Usuario no encontrado.");
+                        Console.WriteLine("Usuario no encontrado.");
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine("❌ Error al actualizar: " + ex.Message);
+                    Console.WriteLine("Error al actualizar: " + ex.Message);
                 }
             }
         }

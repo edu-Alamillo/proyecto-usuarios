@@ -17,7 +17,7 @@ namespace MiAplicacion
             {
                 Console.WriteLine("\n--- MENÚ PRINCIPAL ---");
                 Console.WriteLine("1. Crear Usuario");
-                Console.WriteLine("2. Leer Usuarios");
+                Console.WriteLine("2. Mostrar Usuarios");
                 Console.WriteLine("3. Actualizar Usuario");
                 Console.WriteLine("4. Eliminar Usuario");
                 Console.WriteLine("5. Generar Reporte");

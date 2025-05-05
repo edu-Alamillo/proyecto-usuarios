@@ -39,3 +39,4 @@ C:\Users\Eduardo Alamillo\source\repos\usuarios_proyecto\usuarios_proyecto\obj\D
 C:\Users\Eduardo Alamillo\source\repos\usuarios_proyecto\usuarios_proyecto\obj\Debug\net8.0\usuarios_proyecto.genruntimeconfig.cache
 C:\Users\Eduardo Alamillo\source\repos\usuarios_proyecto\usuarios_proyecto\obj\Debug\net8.0\ref\usuarios_proyecto.dll
 C:\Users\Eduardo Alamillo\source\repos\usuarios_proyecto\usuarios_proyecto\bin\Debug\net8.0\itextsharp.dll
+C:\Users\Eduardo Alamillo\source\repos\usuarios_proyecto\usuarios_proyecto\obj\Debug\net8.0\usuarios_proyecto.sourcelink.json
