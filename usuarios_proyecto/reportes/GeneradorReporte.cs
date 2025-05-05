@@ -13,7 +13,6 @@ namespace usuarios_proyecto.reportes
 
         public void GenerarReporte(string rutaRelativa = "reportes/UsuariosExportados.pdf")
         {
-            // Crear carpeta si no existe
             string carpetaDestino = Path.GetDirectoryName(rutaRelativa);
             if (!Directory.Exists(carpetaDestino))
                 Directory.CreateDirectory(carpetaDestino);
@@ -27,28 +26,23 @@ namespace usuarios_proyecto.reportes
                     {
                         using (var reader = cmd.ExecuteReader())
                         {
-                            // Crear documento PDF
                             Document document = new Document(PageSize.A4, 25, 25, 30, 30);
                             PdfWriter.GetInstance(document, new FileStream(rutaRelativa, FileMode.Create));
                             document.Open();
 
-                            // Título
                             Paragraph titulo = new Paragraph("Lista de Usuarios", new Font(Font.FontFamily.HELVETICA, 16f, Font.BOLD));
                             titulo.Alignment = Element.ALIGN_CENTER;
                             document.Add(titulo);
-                            document.Add(new Paragraph("\n")); // espacio
+                            document.Add(new Paragraph("\n"));
 
-                            // Crear tabla con 4 columnas
                             PdfPTable tabla = new PdfPTable(4);
                             tabla.WidthPercentage = 100;
 
-                            // Encabezados
                             tabla.AddCell("ID");
                             tabla.AddCell("Nombre");
                             tabla.AddCell("Apellido");
                             tabla.AddCell("Correo");
 
-                            // Agregar filas
                             while (reader.Read())
                             {
                                 tabla.AddCell(reader["id"].ToString());
