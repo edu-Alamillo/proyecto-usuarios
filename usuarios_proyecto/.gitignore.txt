@@ -1,0 +1,21 @@
+﻿# Ignorar archivos de VS
+.vs/
+*.user
+*.suo
+
+# Ignorar binarios y objetos
+bin/
+obj/
+
+# Ignorar dependencias locales
+packages/
+*.nupkg
+
+# Ignorar archivos de base de datos local y temporales
+*.dbmdl
+*.log
+*.vsidx
+
+# Archivos temporales
+*.tmp
+*.cache
